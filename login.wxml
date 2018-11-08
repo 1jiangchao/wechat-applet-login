@@ -1,0 +1,19 @@
+<view>
+  <view class='pic'>
+    <image style="width: 200rpx; height: 200rpx;" mode="{{item.mode}}" src="{{src}}"></image>
+  </view>
+  <view class='maint'>
+    <form bindsubmit="formSubmit">
+      <view class="center">
+        <input name="oldpwd" placeholder='请输入用户名' class="introduce" />
+      </view>
+      <view class="center">
+        <input password='true' name="newpwd" placeholder='请输入新密码' class="introduce" />
+      </view>
+      <view class='btnw'>
+        <button class='btn' type='primary' bindtap="toenroll">注册</button>
+        <button type='primary' form-type="submit" class='btn'>登录</button>
+      </view>
+    </form>
+  </view>
+</view>
